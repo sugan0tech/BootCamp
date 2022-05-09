@@ -2,9 +2,18 @@
 
 int main()
 {
-    for (int i = 0; i < 100; i++)
+    int n;
+    printf("Enter the size of the array :");
+    scanf("%d", &n);
+    int arr[n];
+    for (int i = 0; i < n; i++)
     {
-        printf(",%d", i);
+        scanf("%d", &arr[i]);
     }
+    for (int i = n - 1; i >= 0; i = i - 2)
+    {
+        printf("\n%d", arr[i] + arr[i - 1]);
+    }
+
     return 0;
 }
