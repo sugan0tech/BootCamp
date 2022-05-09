@@ -16,10 +16,10 @@ int checkAmstrong(int n)
     int res = 0;
     while (tmp != 0)
     {
-        res = pow(tmp % 10, 3);
+        res += pow(tmp % 10, 3);
         tmp = tmp / 10;
     }
-    if (res = n)
+    if (res == n)
     {
         return 1;
     }

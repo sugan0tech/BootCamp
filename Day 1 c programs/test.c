@@ -1,10 +1,8 @@
-/*
- * Author : sugan0tech
- *Code by : Sugan0tech
- */
 #include <stdio.h>
-#define Pi 23
-
-int main()
+void main()
 {
+    float a = 5, b = 2;
+    int c;
+    c = a % b;
+    printf("%d", c);
 }
