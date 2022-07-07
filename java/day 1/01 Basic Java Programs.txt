@@ -1,0 +1,89 @@
+
+######################################################################
+
+class Demo{
+	public static void main(String ss[]){
+		System.out.println(" Welcome to Java! ");
+	}
+}
+
+######################################################################
+
+// Instance Variable and Instance Method
+
+class Student{
+	int id;
+	void display(){
+		System.out.println(" Result : "+id);
+	}
+}
+
+class Demo1{
+	public static void main(String aa[]){
+	
+		//Student.id=900;
+
+
+		Student s1 = new Student(); 
+
+		s1.id=100;
+		s1.display();
+
+		System.out.println("----------------------");
+
+		Student s2 = new Student(); 
+
+		s2.id=200;
+		s2.display();
+	}
+}
+
+
+
+
+
+######################################################################
+
+class Employee{
+	static int id;
+	static void test(){
+		System.out.println(" X  : "+id);
+	}
+}
+class Demo2{
+	public static void main(String aa[]){
+		Employee.id=2000;
+		Employee.test();
+	}
+}
+
+
+######################################################################
+
+class Test{
+
+	int x;
+	void add(){
+		System.out.println(" Class Test "+x);
+	}
+}
+
+class Demo3{
+	public static void main(String aa[]){
+
+		Test t1 = new Test();	
+
+		t1.x=100;
+		t1.add();
+		t1.add();
+		t1.add();
+
+
+		new Test().x=500; //Anonymous Object 
+
+
+		new Test().add();
+		new Test().add();
+		new Test().add();
+	}
+}
